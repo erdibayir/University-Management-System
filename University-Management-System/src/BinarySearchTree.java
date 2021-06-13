@@ -1,5 +1,3 @@
-package General_Classes;
-
 /**
  * Implementation of a Binary Search Tree
  * @author Jacob / Koffman & Wolfgang

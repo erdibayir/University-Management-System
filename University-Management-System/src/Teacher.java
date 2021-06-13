@@ -1,7 +1,4 @@
-package Teacher;
-import General_Classes.*;
-
-public class Teacher extends General_Classes.Person implements Comparable<Teacher>{
+public class Teacher extends Person implements Comparable<Teacher>{
     public Teacher(String name, String surname) {
         super(name, surname);
     }
@@ -13,7 +10,8 @@ public class Teacher extends General_Classes.Person implements Comparable<Teache
             return 1;
         return 0;
     }
-    public boolean searchStudent(){
-        
+    public Student searchStudent(Database database){
+        database.getStudents();
+        return null;
     }
 }

@@ -1,5 +1,3 @@
-package General_Classes;
-
 /**
  * Searchable tree interface
  * @author Jacob / Koffman & Wolfgang

@@ -1,18 +1,18 @@
-package Database;
-import Teacher.Teacher;
-
 public class Database {
-    private General_Classes.BinarySearchTree<Teacher> teachers;
-    //private BinarySearchTree<Student> students;
+    private BinarySearchTree<Teacher> teachers;
+    private BinarySearchTree<Student> students;
     //private ArrayList<University> universities;
     //prvate ArrayList<Course> course;
     //private ArrayList<Classroom> classrooms;
 
 
-    public General_Classes.BinarySearchTree<Teacher> getTeachers() {
+    public BinarySearchTree<Student> getStudents() {
+        return students;
+    }
+    public BinarySearchTree<Teacher> getTeachers() {
         return teachers;
     }
-    public void setTeachers(General_Classes.BinarySearchTree<Teacher> teachers) {
+    public void setTeachers(BinarySearchTree<Teacher> teachers) {
         this.teachers = teachers;
     }
     public void AddTeacher(Teacher t){

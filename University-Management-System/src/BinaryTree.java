@@ -1,5 +1,3 @@
-package General_Classes;
-
 import java.io.*;
 import java.util.Scanner;
 

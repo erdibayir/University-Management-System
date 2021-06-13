@@ -1,5 +1,3 @@
-package General_Classes;
-
 public class Person{
     private String name;
     private String surname;
