@@ -1,10 +1,12 @@
 public class Person{
     private String name;
     private String surname;
+    private String password;
 
-    public Person(String name, String surname) {
+    public Person(String name, String surname,String password) {
         this.name = name;
         this.surname = surname;
+        this.password=password;
     }
 
     public String getName() {
@@ -22,4 +24,13 @@ public class Person{
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
+
