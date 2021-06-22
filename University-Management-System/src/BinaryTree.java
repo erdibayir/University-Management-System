@@ -233,4 +233,14 @@ public class BinaryTree<E> implements Serializable {
             return data.toString();
         }
     }
+        public int size(){
+        return helpsize(root);
+    }
+    private int helpsize(Node node)
+    {
+        if (node == null)
+            return 0;
+        else
+            return(helpsize(node.left) + 1 + helpsize(node.right));
+    }
 }
