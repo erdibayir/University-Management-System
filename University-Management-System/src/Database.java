@@ -1,21 +1,20 @@
 import java.util.ArrayList;
-import java.util.PriorityQueue;
-
 public class Database {
     private BinarySearchTree<Teacher> teachers;
     private BinarySearchTree<Student> students;
     //private ArrayList<University> universities;
     private ArrayList<Course> course;
     //private ArrayList<Classroom> classrooms;
-    private PriorityQueue<Homework> homework;
+
 
 
     public Database() {
         this.teachers =new BinarySearchTree<Teacher>();
         this.students=new BinarySearchTree<Student>();
         this.course=new ArrayList<Course>();
-        this.homework=new PriorityQueue<Homework>();
         AddTeacherForDataBase();
+        AddCourse();
+        AddStudentForDataBase();
     }
     public BinarySearchTree<Teacher> getTeachers() {
         return teachers;
@@ -23,6 +22,15 @@ public class Database {
     public void setTeachers(BinarySearchTree<Teacher> teachers) {
         this.teachers = teachers;
     }
+
+    public ArrayList<Course> getCourse() {
+        return course;
+    }
+
+    public void setCourse(ArrayList<Course> course) {
+        this.course = course;
+    }
+
     public void AddTeacher(Teacher t){
         teachers.add(t);
     }
@@ -38,7 +46,23 @@ public class Database {
         teachers.add(teacher);
         teachers.add(teacher1);
     }
+    private void AddCourse(){
+        Course cs=new Course(20,"Cse344");
+        Course cs1=new Course(30,"Cse241");
+        course.add(cs);
+        course.add(cs1);
+    }
     private void AddStudentForDataBase(){ ///Database basladıgında veri oluşssun diye ekledim
+        Student student=new Student("Ali","Kınık","ogrenci123");
+        this.students.add(student);
+    }
 
+    public BinarySearchTree<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(BinarySearchTree<Student> students) {
+        this.students = students;
     }
 }
+
