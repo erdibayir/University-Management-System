@@ -10,6 +10,12 @@ public class Course {
     private PriorityQueue<Homework> homework;
     private Stack<String> message;
 
+    public Course(String coursename){
+        this.coursename = coursename;
+        this.students=new LinkedList<Student>();
+        this.homework=new PriorityQueue<Homework>();
+        this.message=new Stack<String>();
+    }
     public Course(int capacity, String coursename) {
         this.capacity = capacity;
         this.coursename = coursename;
@@ -63,5 +69,10 @@ public class Course {
     }
     public void addMessage(String messsage){
         this.message.push(messsage);
+    }
+
+    @Override
+    public String toString() {
+        return "Course{"+ coursename + '\'' + '}';
     }
 }
