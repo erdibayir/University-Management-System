@@ -39,7 +39,7 @@ public class Main {
                     int sec=scanner.nextInt();
                     if (sec<=db.getCourse().size()){
                         Course cs=db.getCourse().get(sec);
-                        Homework hw=new Homework(description,date);
+                        Homework hw=new Homework(cs,description);
                         teacher.addHomework(hw,cs,db);
                     }
                     else
@@ -80,7 +80,7 @@ public class Main {
                         int grade=scanner.nextInt();
                         Course course=new Course(coursename);
                         st.addNot(grade,course);
-                        st.getstudentCourse();
+                      //  st.getstudentCourse();
                     }
                     else {
                         System.out.println("Not Found This Student");
