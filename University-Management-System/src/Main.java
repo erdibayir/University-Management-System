@@ -73,7 +73,7 @@ public class Main {
                     String studentno=scanner.nextLine();
                     Student st=new Student(studentname,studentsurname,studentno);
                     if(db.getStudents().find(st)!=null){
-                        st.getstudentCourse();
+                       
                         System.out.println("Type the name of the course you want to enter the grade for");
                         String coursename=scanner.nextLine();
                         System.out.println("Enter The Grade");
