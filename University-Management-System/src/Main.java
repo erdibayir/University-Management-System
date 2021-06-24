@@ -80,7 +80,7 @@ public class Main {
                         int grade=scanner.nextInt();
                         Course course=new Course(coursename);
                         st.addNot(grade,course);
-                        st.getstudentCourse();
+                      //  st.getstudentCourse();
                     }
                     else {
                         System.out.println("Not Found This Student");
